@@ -32,7 +32,7 @@ build-openusd: venv
     git clone https://github.com/PixarAnimationStudios/OpenUSD.git && \
     python ./OpenUSD/build_scripts/build_usd.py ./
     rm -rf OpenUSD && \
-    echo "export PYTHONPATH='$PWD/installation/lib/python'" >> ~/.zshrc && \
+    echo "export PYTHONPATH='$PWD/installation/lib/openusd'" >> ~/.zshrc && \
     echo "export PATH='$PWD/bin:\$PATH'" >> ~/.zshrc && \
     source ~/.zshrc
 
@@ -59,3 +59,9 @@ setup-openusd: clean-up
     cd .. && \
     cd .. && \
     uv add ./lib/openusd --editable
+
+hello-world:
+    . {{ VENV }}/bin/activate && \
+    cd ./tutorials/helloWorld && \
+    python ./helloWorld.py && \
+    usdview HelloWorld.usda
