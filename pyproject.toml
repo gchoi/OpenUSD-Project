@@ -5,15 +5,6 @@ description = "OpenUSD project"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "openusd",
     "pyopengl>=3.1.10",
     "pyside6>=6.9.2",
 ]
-
-[tool.uv.workspace]
-members = [
-    "lib/openusd",
-]
-
-[tool.uv.sources]
-openusd = { workspace = true, editable = true }
