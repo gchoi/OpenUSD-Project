@@ -28,7 +28,7 @@ venv: install-uv
 # Build OpenUSD
 build-openusd: venv
     . {{ VENV }}/bin/activate && \
-    uv add pyside6 PyOpenGL && \
+    uv sync && \
     git clone https://github.com/PixarAnimationStudios/OpenUSD.git && \
     python ./OpenUSD/build_scripts/build_usd.py ./
     rm -rf OpenUSD

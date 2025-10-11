@@ -32,7 +32,35 @@ $ just build-openusd
 $ just add-env-vars
 ```
 
-## 4. Test
+Added environment variables should look like this:
+
+```bash
+$ cat ~/.zshrc
+
+export PYTHONPATH="/Users/achoi/Documents/Projects/Simulation/OpenUSD-Project/installation/lib/openusd"
+export PATH="/Users/achoi/Documents/Projects/Simulation/OpenUSD-Project/bin:$PATH"
+```
+
+## 4. Clean up
+
+---
+
+Now let's clean up the unnecessary files and directories needed for building the project.
+
+```bash
+$ just clean-up
+```
+
+## 5. Set up the Python environment for the OpenUSD project
+
+---
+
+```bash
+just setup-openusd
+```
+
+
+## 6. Test
 
 ---
 
