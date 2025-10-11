@@ -31,13 +31,16 @@ build-openusd: venv
     uv add pyside6 PyOpenGL && \
     git clone https://github.com/PixarAnimationStudios/OpenUSD.git && \
     python ./OpenUSD/build_scripts/build_usd.py ./
-    rm -rf OpenUSD && \
+    rm -rf OpenUSD
+
+# Add envrionment variables
+add-env-vars:
     echo "export PYTHONPATH=\"$PWD/installation/lib/openusd\"" >> ~/.zshrc && \
     echo "export PATH=\"$PWD/bin:\$PATH\"" >> ~/.zshrc && \
     source ~/.zshrc
 
 # Clean up
-clean-up: build-openusd
+clean-up:
     mkdir -p tutorials && \
     cp -rp ./share/usd/tutorials/* ./tutorials
     rm -rf share &&\
@@ -53,7 +56,7 @@ clean-up: build-openusd
     cp ./readme/README.md ./README.md
 
 # Set up OpenUSD
-setup-openusd: clean-up
+setup-openusd:
     . {{ VENV }}/bin/activate && \
     mv ./lib/python ./lib/openusd && \
     cd ./lib/openusd && \

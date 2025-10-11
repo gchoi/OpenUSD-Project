@@ -1,15 +1,45 @@
 # OpenUSD Project Setup
 
-## Setup
+This repository includes the setup for OpenUSD in convenience.
+
+Before you start, make sure you have [Just command runner](https://github.com/casey/just) installed:
+
+
+## 1.Clone the repository
 
 ---
 
 ```bash
-just setup-openusd
+$ git clone https://github.com/gchoi/OpenUSD-Project.git
+$ cd OpenUSD-Project
 ```
 
-## Test
+## 2. Set up environment & Build OpenUSD
+
+---
 
 ```bash
-just hello-world
+$ just build-openusd
 ```
+
+## 3. Add environment variables
+
+---
+
+> **NOTE**: If you're using .bashrc, replace `~/.zshrc` with `~/.bashrc` in `add-env-vars` command set of [Justfile](./Justfile).
+
+```bash
+$ just add-env-vars
+```
+
+## 4. Test
+
+---
+
+If everything is set up correctly, you should be able to run the following command:
+
+```bash
+$ just hello-world
+```
+
+![usdview.png](./figures/usdview.png)
