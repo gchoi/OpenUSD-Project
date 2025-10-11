@@ -56,7 +56,7 @@ $ just clean-up
 ---
 
 ```bash
-just setup-openusd
+$ just setup-openusd
 ```
 
 
