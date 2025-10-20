@@ -103,3 +103,25 @@ prims_example_3:
     cd ./nvidia-tutorials/Prims && \
     python ./example_3.py && \
     usdview _assets/prim_hierarchy.usda
+
+
+# Properties/Attributes/example_1
+properties_attributes_example_1:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Properties/Attributes && \
+    python ./example_1.py && \
+    usdview _assets/attributes_ex1.usda
+
+# Properties/Attributes/example_2
+properties_attributes_example_2:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Properties/Attributes && \
+    python ./example_2.py && \
+    usdview _assets/attributes_ex2.usda
+
+# Properties/Attributes/example_3
+properties_attributes_example_3:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Properties/Attributes && \
+    python ./example_3.py && \
+    usdview _assets/attributes_ex3.usda
