@@ -125,3 +125,32 @@ properties_attributes_example_3:
     cd ./nvidia-tutorials/Properties/Attributes && \
     python ./example_3.py && \
     usdview _assets/attributes_ex3.usda
+
+# TimeCodes-and-TimeSamples/timecode_sample
+timecodes_and_timesamples_timecode_sample:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/TimeCodes-and-TimeSamples && \
+    python ./timecode_sample.py && \
+    usdview _assets/timecode_sample.usda
+
+# TimeCodes-and-TimeSamples/example_1
+timecodes_and_timesamples_example_1:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/TimeCodes-and-TimeSamples && \
+    python ./example_1.py && \
+    usdview _assets/timecode_ex1.usda
+
+# TimeCodes-and-TimeSamples/example_2
+timecodes_and_timesamples_example_2a:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/TimeCodes-and-TimeSamples && \
+    python ./example_2a.py && \
+    usdview _assets/timecode_ex2a.usda
+
+# TimeCodes-and-TimeSamples/example_2b
+timecodes_and_timesamples_example_2b:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/TimeCodes-and-TimeSamples && \
+    python ./example_2b.py && \
+    usdview _assets/timecode_ex2b.usda
+
