@@ -71,3 +71,14 @@ hello-world:
     cd ./tutorials/helloWorld && \
     python ./helloWorld.py && \
     usdview HelloWorld.usda
+
+##################################################
+# Nvidia Tutorials
+##################################################
+
+# Stage/example_1
+stage_example_1:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Stage && \
+    python ./example_1.py && \
+    usdview _assets/first_stage.usda
