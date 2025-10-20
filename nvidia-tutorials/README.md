@@ -7,3 +7,15 @@
 $ just stage_example_1
 ```
 
+### Prims
+
+```bash
+# example_1.py
+$ just prims_example_1
+
+# example_2.py
+$ just prims_example_2
+
+# example_3.py
+$ just prims_example_3
+```

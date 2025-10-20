@@ -82,3 +82,24 @@ stage_example_1:
     cd ./nvidia-tutorials/Stage && \
     python ./example_1.py && \
     usdview _assets/first_stage.usda
+
+# Prims/example_1
+prims_example_1:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Prims && \
+    python ./example_1.py && \
+    usdview _assets/prims.usda
+
+# Prims/example_2
+prims_example_2:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Prims && \
+    python ./example_2.py && \
+    usdview _assets/sphere_prim.usda
+
+# Prims/example_3
+prims_example_3:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Prims && \
+    python ./example_3.py && \
+    usdview _assets/prim_hierarchy.usda
