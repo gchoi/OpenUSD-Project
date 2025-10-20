@@ -154,3 +154,9 @@ timecodes_and_timesamples_example_2b:
     python ./example_2b.py && \
     usdview _assets/timecode_ex2b.usda
 
+# Prim-and-Property-Paths/example_1
+prim_and_property_paths_example_1:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Prim-and-Property-Paths && \
+    python ./example_1.py && \
+    usdview _assets/paths.usda
