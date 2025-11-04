@@ -167,3 +167,11 @@ scope_example_1:
     cd ./nvidia-tutorials/Scope && \
     python ./example_1.py && \
     usdview _assets/scope.usda
+
+# Xform/example_1
+xform_example_1:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Xform && \
+    python ./example_1.py && \
+    usdview _assets/xform_prim.usda
+
