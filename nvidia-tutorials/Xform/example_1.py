@@ -3,11 +3,8 @@ Example 1: UsdGeom and Xform
 
 #usda 1.0
 
-def "hello"
+def Xform "World"
 {
-    def "world"
-    {
-    }
 }
 """
 
