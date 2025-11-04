@@ -2,11 +2,17 @@
 Example 1: Getting, Validating, and Defining Prims at Path
 
 #usda 1.0
+(
+    defaultPrim = "World"
+)
 
-def "hello"
+def Xform "World"
 {
-    def "world"
+    def Scope "Geometry"
     {
+        def Cube "Cube"
+        {
+        }
     }
 }
 """

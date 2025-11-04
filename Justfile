@@ -160,3 +160,10 @@ prim_and_property_paths_example_1:
     cd ./nvidia-tutorials/Prim-and-Property-Paths && \
     python ./example_1.py && \
     usdview _assets/paths.usda
+
+# Scope/example_1
+scope_example_1:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Scope && \
+    python ./example_1.py && \
+    usdview _assets/scope.usda
