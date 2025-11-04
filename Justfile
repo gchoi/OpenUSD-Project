@@ -175,3 +175,23 @@ xform_example_1:
     python ./example_1.py && \
     usdview _assets/xform_prim.usda
 
+# XformCommonAPI/example_1
+xformcommonapi_example_1:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/XformCommonAPI && \
+    python ./example_1.py && \
+    usdview _assets/xformcommonapi.usda
+
+# Lights/example_1
+lights_example_1:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Lights && \
+    python ./example_1.py && \
+    usdview _assets/distant_light.usda
+
+# Lights/example_2
+lights_example_2:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Lights && \
+    python ./example_2.py && \
+    usdview _assets/light_props.usda
