@@ -202,3 +202,10 @@ reference_example_1:
     cd ./nvidia-tutorials/Reference && \
     python ./example_1.py && \
     usdview _assets/shapes.usda
+
+# Reference/example_2
+reference_example_2:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Reference && \
+    python ./example_2.py && \
+    usdview _assets/asset_ref.usda

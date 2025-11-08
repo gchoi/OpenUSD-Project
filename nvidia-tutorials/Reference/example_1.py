@@ -5,6 +5,17 @@ Example 1: Adding a Reference
 
 def Xform "World"
 {
+    def Sphere "Sphere"
+    {
+    }
+
+    def "Cube_Ref" (
+        prepend references = @./cube.usda@
+    )
+    {
+        double3 xformOp:translate = (5, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
 }
 """
 
