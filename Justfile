@@ -195,3 +195,10 @@ lights_example_2:
     cd ./nvidia-tutorials/Lights && \
     python ./example_2.py && \
     usdview _assets/light_props.usda
+
+# Reference/example_1
+reference_example_1:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Reference && \
+    python ./example_1.py && \
+    usdview _assets/shapes.usda
