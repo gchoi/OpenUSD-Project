@@ -223,3 +223,10 @@ specifiers_example_2:
     cd ./nvidia-tutorials/Specifiers && \
     python ./example_2.py && \
     usdview _assets/specifiers_over_base.usda
+
+# DefaultPrim/example_1
+defaultprim_example_1:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/DefaultPrim && \
+    python ./example_1.py && \
+    usdview _assets/default_prim.usda
