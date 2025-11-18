@@ -209,3 +209,17 @@ reference_example_2:
     cd ./nvidia-tutorials/Reference && \
     python ./example_2.py && \
     usdview _assets/asset_ref.usda
+
+# Specifiers/example_1
+specifiers_example_1:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Specifiers && \
+    python ./example_1.py && \
+    usdview _assets/specifiers_base.usda
+
+# Specifiers/example_2
+specifiers_example_2:
+    . {{ VENV }}/bin/activate && \
+    cd ./nvidia-tutorials/Specifiers && \
+    python ./example_2.py && \
+    usdview _assets/specifiers_over_base.usda
